@@ -14,4 +14,8 @@ require (
 	github.com/spf13/pflag v1.0.3
 	github.com/spf13/viper v1.3.2
 	golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a
+	gopkg.in/yaml.v2 v2.2.0
+)
+replace (
+    golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a => github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a
 )

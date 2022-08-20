@@ -5,7 +5,7 @@ FROM golang:1.12-alpine AS build
 RUN apk update && apk upgrade && apk add --no-cache git nodejs bash npm
 
 # Get dependencies for Go part of build
-RUN go get -u github.com/jteeuwen/go-bindata/...
+RUN go get -u github.com/go-bindata/go-bindata/...
 
 WORKDIR /go/src/github.com/kubernetes-up-and-running/kuard
 
